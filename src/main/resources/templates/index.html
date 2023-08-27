@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<th:block th:replace="~{/basic/basicTemplate :: setContent(~{this::content})}" xmlns:th="http://www.w3.org/1999/xhtml">
+    <th:block th:fragment="content">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
 
-</body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                crossorigin="anonymous"></script>
+
+<!--        <link rel="stylesheet" th:href="@{/css/dashboard.css}"/>-->
+
+        <div class="wrapper">
+
+            <!--Title-->
+            <div class="title bold">대시보드</div>
+
+            <div class="dashboard-wrapper">
+                <div class="left temp">
+                    left
+                </div>
+                <div class="right temp">
+                    right
+                </div>
+            </div>
+        </div>
+    </th:block>
+</th:block>
 </html>
