@@ -25,6 +25,9 @@
                     $("#insertAddr").hide();
                 });
 
+                $("#insertBtn").on("click", function (){
+
+                });
 
 
             });
@@ -33,6 +36,7 @@
         </script>
 
         <div class="wrapper">
+            <form>
 
             <!--Title-->
             <div class="title bold">주소록</div>
@@ -79,25 +83,25 @@
                         <tr>
                             <th>이름</th>
                             <td>
-                                <input type="text" />
+                                <input type="text" id="receiverNm" name="receiver_nm"/>
                             </td>
                         </tr>
                         <tr>
                             <th>연락처</th>
                             <td>
-                                <input type="text" />
+                                <input type="text" id="receiverMobile" name="receiver_mobile"/>
                             </td>
                         </tr>
                         <tr>
                             <th>주소</th>
                             <td>
-                                <input type="text" />
+                                <input type="text" id="receiverAddr" name="receiver_addr"/>
                             </td>
                         </tr>
                         <tr>
                             <th>비고</th>
                             <td>
-                                <input type="text" />
+                                <input type="text" id="receiverComment" name="receiver_comment"/>
                             </td>
                         </tr>
                     </table>
@@ -105,13 +109,13 @@
                     <!-- 버튼  -->
                     <div>
                         <button id="cancelBtn">취소하기</button>
-                        <button id="isnertBtn">등록하기</button>
+                        <button id="insertBtn">등록하기</button>
                     </div>
                     <!-- 버튼 END -->
                 </div>
             </div>
             <!--등록 팝업 END-->
-
+            </form>
         </div>
     </th:block>
 </th:block>
