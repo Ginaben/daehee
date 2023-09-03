@@ -4,7 +4,25 @@
 <mapper namespace="com.tomato.daehee.address.mapper.AddressMapper">
 
     <insert id="customerInfoInsert" parameterType="com.tomato.daehee.address.vo.CustomerVo">
-
+        insert into CUSTOMER_INFO (
+                customer_idx
+            ,   customer_nm
+            ,   customer_mobile
+            ,   customer_addr
+            ,   customer_addr_detail
+            ,   customer_zipcode
+            ,   customer_comment
+            ,   regist_date
+        )  VALUES (
+                #{customer_idx}
+            ,   #{customer_nm}
+            ,   #{customer_mobile}
+            ,   #{customer_addr}
+            ,   #{customer_addr_detail}
+            ,   #{customer_zipcode}
+            ,   #{customer_comment}
+            ,   current_date
+        )
     </insert>
 
 
