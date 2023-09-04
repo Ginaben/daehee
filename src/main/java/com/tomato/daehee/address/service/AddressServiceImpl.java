@@ -1,6 +1,7 @@
 package com.tomato.daehee.address.service;
 
 import com.tomato.daehee.address.mapper.AddressMapper;
+import com.tomato.daehee.address.vo.CustomerVo;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -14,5 +15,10 @@ import java.util.*;
 public class AddressServiceImpl implements AddressService {
 
     private final AddressMapper addressMapper;
+
+    @Override
+    public int customerInfoInsert (CustomerVo customerVo) throws Exception {
+        return addressMapper.customerInfoInsert(customerVo);
+    }
 
 }
