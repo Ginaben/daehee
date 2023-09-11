@@ -3,10 +3,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.tomato.daehee.address.mapper.AddressMapper">
 
-    <insert id="customerInfoInsert" parameterType="com.tomato.daehee.address.vo.CustomerVo">
+    <insert id="customerInfoInsert" parameterType="com.tomato.daehee.address.vo.CustomerReqVo">
         insert into CUSTOMER_INFO (
-                customer_idx
-            ,   customer_nm
+                customer_nm
             ,   customer_mobile
             ,   customer_addr
             ,   customer_addr_detail
@@ -14,8 +13,7 @@
             ,   customer_comment
             ,   regist_date
         )  VALUES (
-                #{customer_idx}
-            ,   #{customer_nm}
+                #{customer_nm}
             ,   #{customer_mobile}
             ,   #{customer_addr}
             ,   #{customer_addr_detail}
