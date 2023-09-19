@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @AllArgsConstructor
 @Slf4j
 public class AddressController {
-
     private AddressService addressService;
 
     @GetMapping("/addressList")
