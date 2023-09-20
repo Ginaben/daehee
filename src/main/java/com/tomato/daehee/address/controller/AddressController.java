@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AddressController {
     private AddressService addressService;
 
+
     @GetMapping("/addressList")
     public String getAddressList(Model model) throws Exception {
 
